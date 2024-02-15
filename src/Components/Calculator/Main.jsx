@@ -1,28 +1,7 @@
 import React, { useState } from 'react';
+import Button from './Button';
 
 export default function Main(){
-
-    const btnElement =  [
-        'C',
-        '1',
-        '2',
-        '3',
-        '4',
-        '5',
-        '6',
-        '7',
-        '8',
-        '9',
-        '0',
-        '.',
-        '+',
-        '-',
-        '(',
-        ')',
-        '÷',
-        'x',
-        '=',
-    ];
 
     const [display, setDisplay] = useState(0);
 
@@ -44,17 +23,7 @@ export default function Main(){
                 <div>
                     <input type="text" value={display} className='border rounded p-2 w-[100%] text-right focus:outline-none text-2xl text-slate-800' readOnly/>
                 </div>
-                <div className='mt-3 flex flex-wrap mx-auto'>
-                    {
-                        btnElement.map((e, i) => {
-                            return (
-                                <button onClick={(e) => displayElement(e)} name={e} className='bg-slate-300 px-4 py-3 m-1 w-[17.5%] rounded text-lg'>{e}</button> 
-                            )
-                        })
-                    }
-                    
-                </div>
-                
+                <Button displayElement={displayElement}/>
             </div>
         </div>
     );

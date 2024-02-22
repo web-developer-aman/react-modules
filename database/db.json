@@ -1,0 +1,50 @@
+{
+    "students": [
+        {
+            "id": 1,
+            "studentId": "BA2023001",
+            "name": "John Doe",
+            "age": 20,
+            "email": "john.doe@example.com",
+            "gender": "Male",
+            "birthday": "1998-03-28",
+            "phone": "+1 (555) 765-4321",
+            "image": "http://john.jpg",
+            "address": {
+                "street": "123 Main Street",
+                "city": "Cityville",
+                "state": "Stateville",
+                "zip": "12345",
+                "country": "Countryland"
+              },
+            "course": "BBA",
+            "session": "2022-23",
+            "major": "Finance",
+            "semester": "1st semester"
+
+        },
+        {
+            "id": 2,
+            "studentId": "CS2023002",
+            "name": "Alice Johnson",
+            "age": 20,
+            "email": "alice.johnson@example.com",
+            "gender": "Male",
+            "birthday": "1998-04-24",
+            "phone": "+1 (555) 123-4567",
+            "image": "http://john.jpg",
+            "address": {
+                "street": "123 Main Street",
+                "city": "Cityville",
+                "state": "Stateville",
+                "zip": "12345",
+                "country": "Countryland"
+              },
+            "course": "Computer Science",
+            "session": "2022-23",
+            "major": "",
+            "semester": "1st semester"
+
+        }
+    ]
+}

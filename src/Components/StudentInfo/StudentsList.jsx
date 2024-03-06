@@ -2,6 +2,10 @@ import React, { useContext, useState} from 'react';
 import { Link } from 'react-router-dom';
 import { StudentsContext } from '../../store/StudentsStore';
 import StudentModal from './StudentModal';
+import { MdDelete } from "react-icons/md";
+import { FaEye } from "react-icons/fa";
+import { MdEdit } from "react-icons/md";
+
 
 export default function StudentList(){
     const studentsData = useContext(StudentsContext);
@@ -11,8 +15,26 @@ export default function StudentList(){
   
     const handleViewClick = (student) => {
       setSelectedStudent(student);
-    setIsModalOpen(true);
+      setIsModalOpen(true);
     };
+    
+    const handleDeleteClick = async (id) => {
+        if (window.confirm('Are you sure you want to delete this student?')) {
+            try {
+                const response = await fetch(`http://localhost:3000/students/${id}`,{
+                    method: 'DELETE',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                });
+                if (response.ok) {
+                    console.log('Student deleted successfully');
+                }
+            } catch (error) {
+                console.log('Error submitting student data:', error);
+            }
+        }
+    }
   
     const handleCloseModal = () => {
       setSelectedStudent(null);
@@ -56,15 +78,16 @@ export default function StudentList(){
                         <td className='py-3 px-2 whitespace-nowrap'>{data.session}</td>
                         <td className='py-3 px-2 whitespace-nowrap'>{data.semester}</td>
                         <td className='py-3 px-2 whitespace-nowrap'>
-                            <Link to='/student-create'>
-                                <button className='bg-blue-500 py-2 px-5 rounded text-white'>Edit</button>
+                            <Link to={`/student-edit/${data.id}`}>
+                                <button className='bg-blue-200 hover:bg-blue-500 p-3 rounded text-blue-500 hover:text-white'><MdEdit className='text-xl' /></button>
                             </Link>
                             <button data-modal-target="default-modal" data-modal-toggle="default-modal"
-                                className='bg-green-500 py-2 px-5 rounded text-white ml-2'
+                                className='bg-green-200 hover:bg-green-500 p-3 rounded text-green-700 hover:text-white ml-2 mr-2'
                                 onClick={() => handleViewClick(data)}
                             >
-                                View
+                                <FaEye className='text-xl' />
                             </button>
+                            <button onClick={() => handleDeleteClick(data.id)} className='bg-red-300 hover:bg-red-700 p-3 rounded text-red-700 hover:text-white'><MdDelete className='text-xl ' /></button>
                         </td>
                         </tr>
                     ))}

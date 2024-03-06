@@ -29,8 +29,6 @@ export default function Main(){
             <StudentsContext.Provider value={students}>
                 <StudentList />
             </StudentsContext.Provider>
-            
-       
 
     )
 }

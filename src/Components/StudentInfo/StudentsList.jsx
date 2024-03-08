@@ -1,14 +1,21 @@
-import React, { useContext, useState} from 'react';
+import React, { useContext, useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import { StudentsContext } from '../../store/StudentsStore';
 import StudentModal from './StudentModal';
 import { MdDelete } from "react-icons/md";
 import { FaEye } from "react-icons/fa";
 import { MdEdit } from "react-icons/md";
-
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function StudentList(){
-    const studentsData = useContext(StudentsContext);
+    const students = useContext(StudentsContext);
+
+    const [studentsData, setStudentsData] = useState(students);
+
+    useEffect(() => {
+        setStudentsData(students);
+    }, [students]);
 
     const [selectedStudent, setSelectedStudent] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -28,6 +35,15 @@ export default function StudentList(){
                     },
                 });
                 if (response.ok) {
+                    const students = studentsData.filter((student) => student.id !== id);
+                    setStudentsData(students);
+                    toast.success('Student deleted successfully', {
+                        position: 'top-right',
+                        autoClose: 3000,
+                        hideProgressBar: true,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                    });
                     console.log('Student deleted successfully');
                 }
             } catch (error) {
@@ -43,6 +59,7 @@ export default function StudentList(){
 
     return (
         <div className='max-w-[1240px] mx-auto'>
+             <ToastContainer />
             <h1 className='text-3xl font-bold text-center py-5'>Student Information List</h1>
             <div className='text-right'>
                 <Link to='/student-create'>

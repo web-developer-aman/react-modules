@@ -108,7 +108,7 @@ const submitStuInfo = async (e) => {
                     <label htmlFor='imageInput'>
                         <img
                         src={selectedImage || student.image || 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'}
-                        alt="Selected" className='w-[120px] h-[120px] rounded-full cursor-pointer'/>
+                        alt="Student Image" className='w-[120px] h-[120px] rounded-full cursor-pointer border'/>
                     </label>
                     <input type="file" id="imageInput" accept="image/*" className='hidden' onChange={handleImageChange}/>
                 </div>

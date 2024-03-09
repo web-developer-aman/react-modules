@@ -57,11 +57,23 @@ export default function StudentList(){
       setIsModalOpen(false);
     };
 
+    const keys = ['studentId', 'name', 'course', 'session', 'semester'];
+
+    const handleSearchStudent = (e) => {
+        const inputValue = e.target.value.toLowerCase();
+
+        const filteredStudents = students.filter((student) => keys.some((key) => student[key].toLowerCase().includes(inputValue)));
+
+        setStudentsData(filteredStudents);
+       
+    };
+
     return (
         <div className='max-w-[1240px] mx-auto'>
              <ToastContainer />
             <h1 className='text-3xl font-bold text-center py-5'>Student Information List</h1>
             <div className='text-right'>
+                <input type="text" placeholder='Serarch...' className='border rounded p-2 mr-4 focus:outline-none' onChange={(e) => handleSearchStudent(e)} />
                 <Link to='/student-create'>
                     <button className='bg-blue-500 py-2 px-5 rounded text-white'>Add New</button>
                 </Link>

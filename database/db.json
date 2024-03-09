@@ -10,14 +10,12 @@
       "birthday": "1998-03-28",
       "phone": "+1 (555) 765-4321",
       "image": "",
-      "address": {
-        "street": "123 Main Street",
-        "policeStation": "Pahartali",
-        "city": "Cityville",
-        "state": "Stateville",
-        "zip": "12345",
-        "country": "Countryland"
-      },
+      "street": "123 Main Street",
+      "policeStation": "Pahartali",
+      "city": "Cityville",
+      "state": "Stateville",
+      "zip": "12345",
+      "country": "Countryland",
       "universityName": "Premier University",
       "course": "BBA",
       "session": "2022-23",
@@ -35,14 +33,12 @@
       "birthday": "1998-04-24",
       "phone": "+1 (555) 123-4567",
       "image": "",
-      "address": {
-        "street": "123 Main Street",
-        "PliceStation": "Akbarshan",
-        "city": "Cityville",
-        "state": "Stateville",
-        "zip": "12345",
-        "country": "Countryland"
-      },
+      "street": "123 Main Street",
+      "PliceStation": "Akbarshan",
+      "city": "Cityville",
+      "state": "Stateville",
+      "zip": "12345",
+      "country": "Countryland",
       "universityName": "Islamic University",
       "course": "Computer Science",
       "session": "2022-23",
@@ -94,7 +90,7 @@
       "major": "EEE",
       "semester": "8th",
       "graduationYear": "2022",
-      "image": "blob:http://localhost:5173/c0033817-bb17-461a-9c9b-f2d01ebe9083"
+      "image": "blob:http://localhost:5173/93e78c09-ecfe-4f01-ac0b-effd5e897499"
     }
   ]
 }

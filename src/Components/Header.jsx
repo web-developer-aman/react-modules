@@ -28,6 +28,9 @@ export default function Header(){
                     <li>
                         <Link to="/student-info">Student Info</Link>
                     </li>
+                    <li>
+                        <Link to="/posts">Blog</Link>
+                    </li>
                 </ul>
                 <ul className={`w-full h-screen block md:hidden text-white fixed top-[68px] bg-slate-800 duration-300
                     ${toggle ? "left-0" : "left-[-100%]"}
@@ -37,6 +40,9 @@ export default function Header(){
                     </Link>
                     <Link to="/student-info">
                         <li className='p-3 hover:bg-slate-900' onClick={() => setToggle(!toggle)}>Student Info</li>
+                    </Link>
+                    <Link to="/posts">
+                        <li className='p-3 hover:bg-slate-900' onClick={() => setToggle(!toggle)}>Blog</li>
                     </Link>
                 </ul>
             </div>

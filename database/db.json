@@ -92,5 +92,32 @@
       "graduationYear": "2022",
       "image": "blob:http://localhost:5173/9d2a017e-0952-4d8a-9ac7-91bb14e72504"
     }
+  ],
+  "posts": [
+    {
+      "id": "199",
+      "title": "Nurturing Your Mind, Body, and Soul",
+      "created_at": "Mar 10",
+      "tags": [
+        "BalancedLifestyle",
+        "MindBodySoul",
+        "WellbeingJourney"
+      ],
+      "description": "In the hustle and bustle of our fast-paced world, it's easy to lose sight of the importance of a balanced lifestyle. Juggling work, social commitments, and personal goals can leave us feeling drained and disconnected. However, taking the time to nurture your mind, body, and soul can lead to a more fulfilling and harmonious life.",
+      "categories": "Lifestyle & Wellness",
+      "image": ""
+    },
+    {
+      "id": "23",
+      "title": "A Holistic Approach to Health",
+      "created_at": "Mar 10",
+      "tags": [
+        "HolisticHealth",
+        "MindBodyBalance"
+      ],
+      "description": "In the tapestry of our lives, health forms the vibrant thread that weaves through every aspect. Achieving optimal well-being is not merely the absence of illness but a dynamic harmony between the physical, mental, and emotional dimensions. Let's explore a holistic approach to health that encompasses these crucial elements.",
+      "categories": "Lifestyle & Wellness",
+      "image": "blob:http://localhost:5173/c4fdb50d-8084-451e-88e5-51d0ac2b6351"
+    }
   ]
 }

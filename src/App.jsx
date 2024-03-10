@@ -5,6 +5,9 @@ import Header from './Components/Header';
 import StudentInfo from './Components/StudentInfo/Main';
 import StudentCreate from './Components/StudentInfo/Create';
 import StudentEdit from './Components/StudentInfo/Edit';
+import PostList from './Components/Blog/Main';
+import CreatePost from './Components/Blog/CreatePost';
+import ViewPost from './Components/Blog/ViewPost';
 
 export default function App(){
   return (
@@ -15,6 +18,9 @@ export default function App(){
             <Route path='/student-info' element={<StudentInfo />} />
             <Route path='/student-create' element={<StudentCreate />} />
             <Route path='/student-edit/:id' element={<StudentEdit />} />
+            <Route path='/posts' element={<PostList />} />
+            <Route path='/post/create' element={<CreatePost />} />
+            <Route path='/post/view/:id' element={<ViewPost />} />
           </Route>
 
         </Routes>

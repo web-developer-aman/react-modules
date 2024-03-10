@@ -4,8 +4,6 @@ import { StudentsContext } from '../../store/StudentsStore';
 
 export default function Main(){
     const [students, setStudents] = useState([]);
-
-    const StudentsInfo = createContext(null);
     
     useEffect(() => {
         const fetchStudentInfo = async () => {

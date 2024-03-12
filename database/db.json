@@ -95,29 +95,31 @@
   ],
   "posts": [
     {
-      "id": "199",
-      "title": "Nurturing Your Mind, Body, and Soul",
-      "created_at": "Mar 10",
+      "id": "903",
+      "title": "A Holistic Approach to Health",
+      "created_at": "Mar 12",
       "tags": [
-        "BalancedLifestyle",
-        "MindBodySoul",
-        "WellbeingJourney"
+        "HealthAndWellness",
+        "HolisticHealth",
+        "PhysicalFitness"
       ],
-      "description": "In the hustle and bustle of our fast-paced world, it's easy to lose sight of the importance of a balanced lifestyle. Juggling work, social commitments, and personal goals can leave us feeling drained and disconnected. However, taking the time to nurture your mind, body, and soul can lead to a more fulfilling and harmonious life.",
+      "description": "In our fast-paced world, where deadlines and responsibilities often take precedence, it's easy to overlook the importance of maintaining good health. However, the foundation of a fulfilling and productive life lies in prioritizing your well-being. Here are some key aspects to consider in adopting a holistic approach to health:",
       "categories": "Lifestyle & Wellness",
       "image": ""
     },
     {
-      "id": "23",
-      "title": "A Holistic Approach to Health",
-      "created_at": "Mar 10",
+      "id": "749",
+      "title": "Crafting a Balanced Lifestyle: Small Changes, Big Impact",
+      "created_at": "Mar 12",
       "tags": [
-        "HolisticHealth",
-        "MindBodyBalance"
+        "BalancedLifestyle",
+        "Wellbeing",
+        "HealthyHabits",
+        "Good Health"
       ],
-      "description": "In the tapestry of our lives, health forms the vibrant thread that weaves through every aspect. Achieving optimal well-being is not merely the absence of illness but a dynamic harmony between the physical, mental, and emotional dimensions. Let's explore a holistic approach to health that encompasses these crucial elements.",
+      "description": "In the hustle and bustle of our daily lives, it's easy to get caught up in the chaos and lose sight of the importance of a well-balanced lifestyle. Striking a harmonious balance between work, personal life, and self-care is key to overall happiness and fulfillment. Here are some tips for cultivating a lifestyle that promotes well-being and satisfaction:",
       "categories": "Lifestyle & Wellness",
-      "image": "blob:http://localhost:5173/c4fdb50d-8084-451e-88e5-51d0ac2b6351"
+      "image": ""
     }
   ]
 }

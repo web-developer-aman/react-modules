@@ -8,6 +8,7 @@ import StudentEdit from './Components/StudentInfo/Edit';
 import PostList from './Components/Blog/Main';
 import CreatePost from './Components/Blog/CreatePost';
 import ViewPost from './Components/Blog/ViewPost';
+import EditPost from './Components/Blog/EditPost';
 
 export default function App(){
   return (
@@ -21,6 +22,7 @@ export default function App(){
             <Route path='/posts' element={<PostList />} />
             <Route path='/post/create' element={<CreatePost />} />
             <Route path='/post/view/:id' element={<ViewPost />} />
+            <Route path='/post/edit/:id' element={<EditPost />} />
           </Route>
 
         </Routes>

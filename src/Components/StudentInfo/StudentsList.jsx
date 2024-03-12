@@ -47,7 +47,7 @@ export default function StudentList(){
                     console.log('Student deleted successfully');
                 }
             } catch (error) {
-                console.log('Error submitting student data:', error);
+                console.log('Error deleting student data:', error);
             }
         }
     }
